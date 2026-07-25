@@ -1,47 +1,80 @@
 body    {
-    font-family: Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: #515076;
+    background-image: url("images/background-image.png");
 } 
 
-.title1 {
+.main-title {
     text-align: center;
-    font-size: 30px; 
+    font-size: 70px; 
     margin-top: 50px;
-}
-
-.main-text-color {
-    color:#515076
+    margin-bottom: 110px;
+    font-weight: 400;
 }
 
 .product-purpose {
     font-size: 12px;
     line-height: 24px;
-    font-family: Montserrat, sans-serif;
     color: #A5A3B9;
+    text-transform: uppercase;
 }
 
 ul {
     list-style: none;
 }
 
-ul li li {
+.cards-list li li {
     list-style: circle;
-    padding: 2px;
-    font-size: 12px;
+    padding: 5px;
+    font-size: 13px;
 }
 
 .description {
     font-weight: 300;
-    font-size: 17px; 
+    font-size: 13px; 
+    line-height: 18px;
 }
 
-.card-background {
+.cards-list .product-card{
     background-color: #F7F7FA;
-    padding: 20px;
+    padding: 30px;
     margin-bottom: 20px;
-    width: 500px;
     border-radius: 10px;
+    width: 340px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 340px;
+}
+
+.cards-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-title {
+    font-size: 20px;
+}
+
+.product-price {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
 }
 
 
- 
+.product-composition {
+    margin-top: 20px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.product-composition li {
+        margin-left: -20px; 
+}
