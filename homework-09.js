@@ -7,6 +7,34 @@ const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 const newNumbers = numbers.filter(num => num >= 5)
 console.log(newNumbers)
 
+// Создать массив строк, относящихся к любой сущности, проверить, есть ли в массиве какая-то определенная сущность.
+
+const books = [
+  "Три основы",
+  "Четыре правила",
+  "Честь основ",
+  "Отвеведние сомнений",
+  "Облегченный фикх",
+  "Условия молитвы",
+  "Вопросы времен невежества"
+]
+
+books.forEach(book => {
+  if (book.includes("Облегченный фикх")) {
+    console.log(`"Облегченный фикх" есть в списке!`)
+    return
+  }
+})
+
+// другой вариант как бы я реализовал:
+
+function isBookInArray(books) {
+  const stringBooks = books.join(" ")
+  console.log(stringBooks.includes("Облегченный фикх") ? `Книга "Облегченный фикх" есть в списке!` : "Такой книги нет!")
+}
+
+isBookInArray(books)
+
 const cars = [
   {
     make: "Toyota",
