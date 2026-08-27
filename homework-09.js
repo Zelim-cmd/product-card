@@ -12,28 +12,33 @@ console.log(newNumbers)
 const books = [
   "Три основы",
   "Четыре правила",
-  "Честь основ",
+  "Шесть основ",
   "Отвеведние сомнений",
   "Облегченный фикх",
   "Условия молитвы",
   "Вопросы времен невежества"
 ]
 
-books.forEach(book => {
-  if (book.includes("Облегченный фикх")) {
-    console.log(`"Облегченный фикх" есть в списке!`)
-    return
-  }
-})
 
-// другой вариант как бы я реализовал:
-
-function isBookInArray(books) {
-  const stringBooks = books.join(" ")
-  console.log(stringBooks.includes("Облегченный фикх") ? `Книга "Облегченный фикх" есть в списке!` : "Такой книги нет!")
+function isValidName(name) {
+    if (typeof name !== "string" || name.trim() === "") {
+      return false
+    } else {
+      return true
+    }
 }
 
-isBookInArray(books)
+function isBookInArray(name) {
+  if (isValidName(name)) {
+  const stringBooks = books.join(" ")
+  console.log(stringBooks.includes(name) ? `Книга "${name}" есть в списке!` : "Такой книги нет!")
+} else {
+  console.log("Введи корректное название!")
+}
+
+}
+
+isBookInArray("Три основы")
 
 const cars = [
   {
