@@ -1,10 +1,11 @@
+export const imageSrc = "images/";
 export const products = [
   {
     id: 1,
     purpose: 'Для нормальной кожи',
     title: 'Увлажняющий мусс',
     description: 'Глубоко увлажняют кожу лица, оставляя её мягкой и гладкой.',
-    image: 'images/muss.png',
+    image: 'muss.png',
     alt: 'Картинка мусса',
     composition: [
       'Активные натуральные комплексы',
@@ -18,7 +19,7 @@ export const products = [
     purpose: 'Для нормальной кожи',
     title: 'Увлажняющая маска',
     description: 'Способствует удерживанию влаги в верхних слоях кожи.',
-    image: 'images/mask.png',
+    image: 'mask.png',
     alt: 'Картинка маски',
     composition: ['Воски', 'Минералы', 'Масла'],
     price: 3500
@@ -28,7 +29,7 @@ export const products = [
     purpose: 'Для нормальной кожи',
     title: 'Гель для умывания',
     description: 'Интенсивно очищает, не повреждает защитный барьер кожи.',
-    image: 'images/cream-wash.png',
+    image: 'cream-wash.png',
     alt: 'Картинка геля для умывания',
     composition: [
       'Минералы',
@@ -42,7 +43,7 @@ export const products = [
     purpose: 'Для нормальной кожи',
     title: 'Подарочный набор №1',
     description: 'Набор, состоящий из увлажняющего крема и маски.',
-    image: 'images/gift1.png',
+    image: 'gift1.png',
     alt: 'Картинка подарочного набора №1',
     composition: ['Воски', 'Минералы', 'Масла'],
     price: 4750
@@ -52,7 +53,7 @@ export const products = [
     purpose: 'Для нормальной кожи',
     title: 'Подарочный набор №5',
     description: 'Весь набор средств Invisible symphony, крем, маска, мусс и гель для умывания.',
-    image: 'images/gift5.png',
+    image: 'gift5.png',
     alt: 'Картинка подарочного набора №5',
     composition: ['Воски', 'Минералы', 'Масла'],
     price: 7520

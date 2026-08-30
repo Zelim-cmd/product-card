@@ -1,5 +1,6 @@
 
 import { products } from './product-cards.js';
+import { imageSrc } from './product-cards.js';
 const cardTemplate = document.getElementById('card-template');
 const cardsList = document.getElementById('cards-list');
 
@@ -31,7 +32,7 @@ function renderCards(count) {
   const selectedProducts = products.slice(0, count);
   selectedProducts.forEach((product) => {
     const cardClone = cardTemplate.content.cloneNode(true);
-    cardClone.querySelector('.cards-list__product-image').src = product.image;
+    cardClone.querySelector('.cards-list__product-image').src = imageSrc + product.image;
     cardClone.querySelector('.cards-list__product-image').alt = product.alt;
     cardClone.querySelector('.cards-list__product-purpose').textContent = product.purpose;
     cardClone.querySelector('.cards-list__product-title').textContent = product.title;
