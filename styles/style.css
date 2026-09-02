@@ -1,7 +1,7 @@
 body {
     font-family: "Montserrat", sans-serif;
     color: #515076;
-    background-image: url("images/bg-flowers.png");
+    background-image: url("../images/bg-flowers.png");
 } 
 
 .container {
@@ -21,3 +21,20 @@ ul {
     list-style: none;
 }
 
+.button {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #515076;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btn-toggle-color-gray {
+    background-color: #A5A3B9;
+}
