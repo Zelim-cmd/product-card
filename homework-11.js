@@ -21,13 +21,6 @@ const modal = document.querySelector(".modal");
 const modalClose = document.querySelector(".modal-close");
 const form = document.querySelector(".registration-form");
 
-const firstName = document.getElementById("first-name").value;
-const lastName = document.getElementById("last-name").value;
-const birthDate = document.getElementById("birth-date").value;
-const login = document.getElementById("login").value;
-const password = document.getElementById("password").value;
-const passwordRepeat = document.getElementById("password-repeat").value;
-
 registrationButton.addEventListener("click", function () {
     modal.classList.add("modal-showed");
 });
@@ -40,6 +33,13 @@ modalClose.addEventListener("click", function () {
 
 form.addEventListener("submit", function (event) {
     event.preventDefault();
+
+  const firstName = document.getElementById("firstName").value;
+  const lastName = document.getElementById("lastName").value;
+  const birthDate = document.getElementById("birthDate").value;
+  const login = document.getElementById("login").value;
+  const password = document.getElementById("password").value;
+  const passwordRepeat = document.getElementById("passwordRepeat").value;
 
 if (!form.checkValidity()) {
     console.log("Регистрация отклонена");
@@ -61,5 +61,4 @@ if (!form.checkValidity()) {
 };
 
   console.log(userData);
-  
-});
+}); 

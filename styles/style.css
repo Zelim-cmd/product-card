@@ -83,3 +83,17 @@ ul {
     padding: 30px;
     border-radius: 10px;
 }
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 500px;
+}
+
+.registration-form input {
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
