@@ -25,7 +25,7 @@ ul {
 .button {
     display: block;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding: 10px 20px;
     font-size: 16px;
     background-color: #515076;
@@ -38,4 +38,48 @@ ul {
 
 .btn-toggle-color-gray {
     background-color: #A5A3B9;
+}
+
+.lightblue {
+    background-color: lightblue;
+}
+
+.hidden {
+    display: none;
+}
+
+.button-toggle-details {
+    margin-bottom: -50px;
+    width: 100%;
+    display: inline-block;
+}
+
+.action-button {
+    display: block;
+    width: 100%;
+}
+
+.modal {
+    display: none;
+}
+
+.modal.modal-showed {
+    display: block;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
 }

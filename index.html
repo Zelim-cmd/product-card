@@ -6,6 +6,7 @@
     <title>product-card</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/cards.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -16,9 +17,45 @@
 
     <main class="container">
         <h1 class="main-title">Выбери свой продукт</h1>
+        <button class="button btn-registration">Регистрация</button>
         <button class="button btn-change-color-first-card">Изменить цвет первой карточки</button>
         <button class="button btn-change-color-all-cards">Изменить цвет всех карточек</button>
-        <button class="button btn-open-google">Открыть страницу google.com</button>            <button class="button btn-toggle-color">Поменять цвет кнопки</button>
+        <button class="button btn-open-google">Открыть страницу google.com</button>
+        <button class="button btn-toggle-color">Поменять цвет кнопки</button>
+
+        <div class="modal">
+            <div class="overlay"></div>
+
+            <div class="modal-content">
+                <button class="modal-close">×</button>
+
+                <h2>Регистрация</h2>
+
+                <form class="registration-form">
+
+                    <label for="firstName">Имя</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Введите имя" required>
+
+                    <label for="lastName">Фамилия</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Введите фамилию" required>
+
+                    <label for="birthDate">Дата рождения</label>
+                    <input type="date" id="birthDate" name="birthDate" required>
+
+                    <label for="login">Логин</label>
+                    <input type="text" id="login" name="login" placeholder="Введите логин" required>
+
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" name="password" placeholder="Введите пароль" required minlength="6">
+
+                    <label for="passwordRepeat">Повторите пароль</label>
+                    <input type="password" id="passwordRepeat" name="passwordRepeat" placeholder="Повторите пароль" required minlength="6">
+
+                    <button class="button btn-registration" type="submit">Зарегистрироваться</button>
+
+                </form>
+            </div>
+        </div>
     
         <ul class="cards-list" id="cards-list"></ul>
 
@@ -41,12 +78,66 @@
 
     </main>
 
+    <footer class="footer">
+
+        <div class="footer__top">
+
+            <div class="about-us">
+
+                <h2 class="about-us__title">Product Cards</h2>
+                <p class="about-us__text">У нас самые лучшие продукты для кожи!</p>
+
+                <div class="social-links">
+
+                    <a class="social-links__link" href="https://vk.com">
+                        <img src="https://cdn.simpleicons.org/vk" alt="ВКонтакте">
+                    </a>
+
+                    <a class="social-links__link" href="https://t.me">
+                        <img src="https://cdn.simpleicons.org/telegram" alt="Telegram">
+                    </a>
+
+                </div>
+
+            </div> 
+
+            <div class="promo-request">
+
+                <h2 class="promo-request__title">Подпишись на наши акции!</h2>
+
+                <form class="promo-request__form" id="promo-request__form">
+                    <input class="promo-request__input" type="email" placeholder="Введите ваш e-mail" required>
+                    <button class="promo-request__button" type="submit">Подписаться</button>
+                </form>
+            </div>
+
+            <div class="fast-links">
+                <ul class="fast-links__list">
+                    <li class="fast-links__title fast-links__item">Быстрые ссылки:</li>
+                    <li class="fast-links__item"><a href="" class="fast-links__link">Главная</a></li>
+                    <li class="fast-links__item"><a href="" class="fast-links__link">Магазин</a></li>
+                    <li class="fast-links__item"><a href="" class="fast-links__link">Контакты</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer__bottom">
+            <div class="copyright">
+                <p class="copyright__text">www.product-cards.com©all right reserved.</p>
+            </div>
+        </div>
+        
+
+    </footer>
+
     <script src="main.js"></script>
     <script src="homework-7.js"></script>
     <script src="homework-8.js"></script>
     <script type="module" src="homework-09.js"></script>
     <script type="module" src="product-cards.js"></script>
     <script type="module" src="homework-10.js"></script>
+    <script type="module" src="homework-11.js"></script>
     <script type="module" src="comments.js"></script>
     
 </body>
